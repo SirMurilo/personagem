@@ -1,0 +1,30 @@
+.corredor1{
+    background: url(img/mega\ \(1\).png);
+    width: calc(1591px/ 10);
+    height: 157px;
+    position: absolute;
+    top: 80%;
+    left: 0%;
+    animation: correr 0.5s steps(10) infinite, mover 5s linear infinite;
+}
+
+@keyframes correr {
+    0%{
+        background-position: 0px;
+    }
+    100%{
+        background-position: -1591px;
+    }
+}
+@keyframes mover {
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translateX(1800px);
+    }
+}
+body{
+    background-image: url(img/parque.jpg);
+    background-size: cover;
+}
